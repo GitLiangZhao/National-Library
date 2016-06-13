@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="au.gov.library.dao.BorrowMapper" >
+  <resultMap id="BaseResultMap" type="au.gov.library.model.Borrow" >
+    <id column="book_number" property="bookNumber" jdbcType="DECIMAL" />
+    <id column="patron_number" property="patronNumber" jdbcType="DECIMAL" />
+    <result column="patron_name" property="patronName" jdbcType="VARCHAR" />
+    <result column="book_name" property="bookName" jdbcType="VARCHAR" />
+    <result column="return_date" property="returnDate" jdbcType="TIMESTAMP" />
+    <result column="borrowed_date" property="borrowedDate" jdbcType="TIMESTAMP" />
+    <result column="fine" property="fine" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    book_number, patron_number, patron_name, book_name, return_date, borrowed_date, 
+    fine
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="au.gov.library.model.BorrowClause" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from borrow
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+    <if test="offset != null and length != null">
+    	limit ${offset}, ${length}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="au.gov.library.model.BorrowKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from borrow
+    where book_number = #{bookNumber,jdbcType=DECIMAL}
+      and patron_number = #{patronNumber,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="au.gov.library.model.BorrowKey" >
+    delete from borrow
+    where book_number = #{bookNumber,jdbcType=DECIMAL}
+      and patron_number = #{patronNumber,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="au.gov.library.model.BorrowClause" >
+    delete from borrow
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="au.gov.library.model.Borrow" >
+    insert into borrow (book_number, patron_number, patron_name, 
+      book_name, return_date, borrowed_date, 
+      fine)
+    values (#{bookNumber,jdbcType=DECIMAL}, #{patronNumber,jdbcType=DECIMAL}, #{patronName,jdbcType=VARCHAR}, 
+      #{bookName,jdbcType=VARCHAR}, #{returnDate,jdbcType=TIMESTAMP}, #{borrowedDate,jdbcType=TIMESTAMP}, 
+      #{fine,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="au.gov.library.model.Borrow" >
+    insert into borrow
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bookNumber != null" >
+        book_number,
+      </if>
+      <if test="patronNumber != null" >
+        patron_number,
+      </if>
+      <if test="patronName != null" >
+        patron_name,
+      </if>
+      <if test="bookName != null" >
+        book_name,
+      </if>
+      <if test="returnDate != null" >
+        return_date,
+      </if>
+      <if test="borrowedDate != null" >
+        borrowed_date,
+      </if>
+      <if test="fine != null" >
+        fine,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bookNumber != null" >
+        #{bookNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="patronNumber != null" >
+        #{patronNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="patronName != null" >
+        #{patronName,jdbcType=VARCHAR},
+      </if>
+      <if test="bookName != null" >
+        #{bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="returnDate != null" >
+        #{returnDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="borrowedDate != null" >
+        #{borrowedDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fine != null" >
+        #{fine,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="au.gov.library.model.BorrowClause" resultType="java.lang.Integer" >
+    select count(*) from borrow
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update borrow
+    <set >
+      <if test="record.bookNumber != null" >
+        book_number = #{record.bookNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="record.patronNumber != null" >
+        patron_number = #{record.patronNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="record.patronName != null" >
+        patron_name = #{record.patronName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bookName != null" >
+        book_name = #{record.bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.returnDate != null" >
+        return_date = #{record.returnDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.borrowedDate != null" >
+        borrowed_date = #{record.borrowedDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.fine != null" >
+        fine = #{record.fine,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update borrow
+    set book_number = #{record.bookNumber,jdbcType=DECIMAL},
+      patron_number = #{record.patronNumber,jdbcType=DECIMAL},
+      patron_name = #{record.patronName,jdbcType=VARCHAR},
+      book_name = #{record.bookName,jdbcType=VARCHAR},
+      return_date = #{record.returnDate,jdbcType=TIMESTAMP},
+      borrowed_date = #{record.borrowedDate,jdbcType=TIMESTAMP},
+      fine = #{record.fine,jdbcType=DECIMAL}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="au.gov.library.model.Borrow" >
+    update borrow
+    <set >
+      <if test="patronName != null" >
+        patron_name = #{patronName,jdbcType=VARCHAR},
+      </if>
+      <if test="bookName != null" >
+        book_name = #{bookName,jdbcType=VARCHAR},
+      </if>
+      <if test="returnDate != null" >
+        return_date = #{returnDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="borrowedDate != null" >
+        borrowed_date = #{borrowedDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fine != null" >
+        fine = #{fine,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where book_number = #{bookNumber,jdbcType=DECIMAL}
+      and patron_number = #{patronNumber,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="au.gov.library.model.Borrow" >
+    update borrow
+    set patron_name = #{patronName,jdbcType=VARCHAR},
+      book_name = #{bookName,jdbcType=VARCHAR},
+      return_date = #{returnDate,jdbcType=TIMESTAMP},
+      borrowed_date = #{borrowedDate,jdbcType=TIMESTAMP},
+      fine = #{fine,jdbcType=DECIMAL}
+    where book_number = #{bookNumber,jdbcType=DECIMAL}
+      and patron_number = #{patronNumber,jdbcType=DECIMAL}
+  </update>
+</mapper>

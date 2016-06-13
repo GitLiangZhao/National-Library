@@ -1,0 +1,306 @@
+2016-06-10 01:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 01:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 01:58:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 02:09:26 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Wrong user name or password [28000-192]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.engine.Engine.openSession(Engine.java:104)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: Wrong user name or password [28000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 19 more
+2016-06-10 02:09:42 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Wrong user name or password [28000-192]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.engine.Engine.openSession(Engine.java:104)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: Wrong user name or password [28000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 19 more
+2016-06-10 02:13:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 02:13:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 02:13:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 02:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 02:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 02:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 02:35:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 02:35:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 02:35:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 14:42:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 14:42:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 14:42:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 15:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 15:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 15:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:32:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:32:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:32:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:45:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:45:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:45:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:48:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:48:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:48:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:50:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:50:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:50:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:50:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:50:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:50:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:53:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:53:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:53:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 16:56:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 16:56:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 16:56:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 17:06:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 17:06:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 17:06:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-10 18:43:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '0', '2') [42000-192]
+2016-06-10 18:43:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-10 18:43:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '0', '0') [42000-192]
+2016-06-13 17:38:51 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Wrong user name or password [28000-192]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.engine.Engine.openSession(Engine.java:104)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: Wrong user name or password [28000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 19 more
+2016-06-13 17:39:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Function "DISCOUNT" not found; SQL statement:
+SELECT discount(*) FROM BOOK [90022-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.readJavaFunction(Parser.java:2417)
+	at org.h2.command.Parser.readFunction(Parser.java:2469)
+	at org.h2.command.Parser.readTerm(Parser.java:2806)
+	at org.h2.command.Parser.readFactor(Parser.java:2320)
+	at org.h2.command.Parser.readSum(Parser.java:2307)
+	at org.h2.command.Parser.readConcat(Parser.java:2277)
+	at org.h2.command.Parser.readCondition(Parser.java:2127)
+	at org.h2.command.Parser.readAnd(Parser.java:2099)
+	at org.h2.command.Parser.readExpression(Parser.java:2091)
+	at org.h2.command.Parser.parseSelectSimpleSelectPart(Parser.java:2003)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:2035)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1890)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1711)
+	at org.h2.command.Parser.parseSelect(Parser.java:1699)
+	at org.h2.command.Parser.parsePrepared(Parser.java:445)
+	at org.h2.command.Parser.parse(Parser.java:317)
+	at org.h2.command.Parser.parse(Parser.java:289)
+	at org.h2.command.Parser.prepareCommand(Parser.java:254)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-13 17:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '1', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '1', '2') [42000-192]
+2016-06-13 17:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO ""BOOK"" VALUES ('2431476', 'Who\'S[*] LOOKING OUT FOR YOU?', 'BILL O\'Reilly', 'Broadway', '2003-10-10 19:52:57', 'USD 24', 'Life', 'Z43', '2016-06-10 19:52:57', '1', '4') "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO `book` VALUES ('2431476', 'Who\'s Looking Out for You?', 'Bill O\'Reilly', 'Broadway', '2003-10-10 19:52:57', 'USD 24', 'Life', 'Z43', '2016-06-10 19:52:57', '1', '4') [42001-192]
+2016-06-13 17:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2922462', 'Dave Pelz\'s Short Game Bible', 'Pelz, Dave', 'Bantam Dell Pub Group', '1999-06-10 19:49:39', '239', 'Life', 'Z21', '2016-06-10 19:49:39', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2922462', 'Dave Pelz\'s Short Game Bible', 'Pelz, Dave', 'Bantam Dell Pub Group', '1999-06-10 19:49:39', '239', 'Life', 'Z21', '2016-06-10 19:49:39', '0', '2') [42000-192]
+2016-06-13 17:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-13 17:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `borrow` VALUES ('2', '2431476', 'Jerry', 'Who\'s Looking Out for You?', null, '2016-06-10 20:04:06[*]', null)"; SQL statement:
+INSERT INTO `borrow` VALUES ('2', '2431476', 'Jerry', 'Who\'s Looking Out for You?', null, '2016-06-10 20:04:06', null) [42000-192]
+2016-06-13 17:48:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '1', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '1', '0') [42000-192]
+2016-06-13 17:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '1', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '1', '2') [42000-192]
+2016-06-13 17:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO ""BOOK"" VALUES ('2431476', 'Who\'S[*] LOOKING OUT FOR YOU?', 'BILL O\'Reilly', 'Broadway', '2003-10-10 19:52:57', 'USD 24', 'Life', 'Z43', '2016-06-10 19:52:57', '1', '4') "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO `book` VALUES ('2431476', 'Who\'s Looking Out for You?', 'Bill O\'Reilly', 'Broadway', '2003-10-10 19:52:57', 'USD 24', 'Life', 'Z43', '2016-06-10 19:52:57', '1', '4') [42001-192]
+2016-06-13 17:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2922462', 'Dave Pelz\'s Short Game Bible', 'Pelz, Dave', 'Bantam Dell Pub Group', '1999-06-10 19:49:39', '239', 'Life', 'Z21', '2016-06-10 19:49:39', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2922462', 'Dave Pelz\'s Short Game Bible', 'Pelz, Dave', 'Bantam Dell Pub Group', '1999-06-10 19:49:39', '239', 'Life', 'Z21', '2016-06-10 19:49:39', '0', '2') [42000-192]
+2016-06-13 17:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-13 17:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `borrow` VALUES ('2', '2431476', 'Jerry', 'Who\'s Looking Out for You?', null, '2016-06-10 20:04:06[*]', null)"; SQL statement:
+INSERT INTO `borrow` VALUES ('2', '2431476', 'Jerry', 'Who\'s Looking Out for You?', null, '2016-06-10 20:04:06', null) [42000-192]
+2016-06-13 17:51:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '1', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '1', '0') [42000-192]
+2016-06-13 17:57:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '1', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2023370', 'Beautiful Code', 'Greg Wilson Andy Oram', 'O\'Reilly Media', '0008-04-08 18:55:36', '$44', 'Programming', 'A121', '2016-06-08 18:55:36', '1', '2') [42000-192]
+2016-06-13 17:57:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO ""BOOK"" VALUES ('2431476', 'Who\'S[*] LOOKING OUT FOR YOU?', 'BILL O\'Reilly', 'Broadway', '2003-10-10 19:52:57', 'USD 24', 'Life', 'Z43', '2016-06-10 19:52:57', '1', '4') "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO `book` VALUES ('2431476', 'Who\'s Looking Out for You?', 'Bill O\'Reilly', 'Broadway', '2003-10-10 19:52:57', 'USD 24', 'Life', 'Z43', '2016-06-10 19:52:57', '1', '4') [42001-192]
+2016-06-13 17:57:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('2922462', 'Dave Pelz\'s Short Game Bible', 'Pelz, Dave', 'Bantam Dell Pub Group', '1999-06-10 19:49:39', '239', 'Life', 'Z21', '2016-06-10 19:49:39', '0', '2[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('2922462', 'Dave Pelz\'s Short Game Bible', 'Pelz, Dave', 'Bantam Dell Pub Group', '1999-06-10 19:49:39', '239', 'Life', 'Z21', '2016-06-10 19:49:39', '0', '2') [42000-192]
+2016-06-13 17:57:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1[*]')"; SQL statement:
+INSERT INTO `book` VALUES ('26295140', 'CSS Secrets', 'Lea Verou', 'O\'Reilly Media', '2015-05-08 19:00:18', 'USD 39', 'Programming', 'Z32', '2016-06-08 19:00:18', '0', '1') [42000-192]
+2016-06-13 17:57:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `borrow` VALUES ('2', '2431476', 'Jerry', 'Who\'s Looking Out for You?', null, '2016-06-10 20:04:06[*]', null)"; SQL statement:
+INSERT INTO `borrow` VALUES ('2', '2431476', 'Jerry', 'Who\'s Looking Out for You?', null, '2016-06-10 20:04:06', null) [42000-192]
+2016-06-13 17:57:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '1', '0[*]')"; SQL statement:
+INSERT INTO `patron` VALUES ('3', 'Lisa', 'Female', '4736282', 'Department of Veterans\' Affairs', 'Gnabra Building, 21 Genge Street, Civic', '0464327263', 'Member', '2016-06-08 15:43:38', '1', '0') [42000-192]
